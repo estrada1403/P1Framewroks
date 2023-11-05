@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2em;
+    color: whitesmoke;
+    text-align: center;
+    position: sticky;
 }
 
 body {
@@ -10,13 +18,6 @@ body {
     font-size: 1em;
     align-items: center;
 }
-
-h1 {
-    font-size: 3em;
-    color: whitesmoke;
-    text-align: center;
-}
-
 
 .sidebar {
     height: 100%;
@@ -40,19 +41,26 @@ h1 {
     font-weight: bold;
 }
 
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
-
-
-@media screen and (max-width: 850px) {
-    #gallery .column {
-        flex: 50%;
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
     }
 }
 
-@media screen and (max-width: 560px) {
-    #gallery .column {
-        flex: 100%;
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
     }
 }
