@@ -51,6 +51,26 @@ body {
     }
 }
 
-#content > nav > .breadcrumb {
-    $breadcrumb-divider: quote(">");
+.breadcrumb {
+
 }
+
+/*container*/
+
+#container{
+display: flex;
+background-color: aquamarine;
+justify-content: center;
+
+}
+
+.row{
+display: flex;
+}
+
+.col{
+    display: flex;
+    
+}
+
+/*final container*/
