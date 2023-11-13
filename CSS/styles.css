@@ -10,6 +10,9 @@ body {
     align-items: center;
 }
 
+.sidebar {
+}
+
 #content > .titles > h1{
     font-family: glodok, sans-serif;
     font-weight: 400;
