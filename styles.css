@@ -2,11 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< Updated upstream
+=======
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    position: sticky;
+    font-family: glodok, sans-serif;
+>>>>>>> Stashed changes
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:black;
+    font-family: degular, sans-serif;
+    background-color: rgb(5, 88, 252);
     font-size: 1em;
     align-items: center;
 }
@@ -39,7 +51,48 @@ h1 {
     background-color:rgb(140, 140, 245);
     font-weight: bold;
 }
+.marquee {
+    width: 100%;
+    padding: 0.6em 0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    font-family: degular, sans-serif;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
 
+.marquee > span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee > span:hover {
+    animation-play-state: paused;
+}
+
+#content2 > nav > .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: lighter;
+}
+
+footer {
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
 
 
 
