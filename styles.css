@@ -46,8 +46,6 @@ a:hover {
 }
 
 
-
-
 @media (min-aspect-ratio: 16/9){
     .video {
         width: 100%;
@@ -59,5 +57,13 @@ a:hover {
     .video {
         width: auto;
         height: 100%;
+    }
+}
+
+/*Responsive*/
+
+@media screen and (max-width:1200px) {
+    header {
+        padding: 40px;
     }
 }
