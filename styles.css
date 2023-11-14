@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< Updated upstream
-=======
     scroll-behavior: smooth;
 }
 
@@ -13,7 +11,6 @@ h1 {
     text-align: center;
     position: sticky;
     font-family: glodok, sans-serif;
->>>>>>> Stashed changes
 }
 
 body {
