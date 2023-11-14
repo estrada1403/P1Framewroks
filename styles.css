@@ -36,7 +36,7 @@ h1 {
     flex-direction: column;
 }
 
-.sidebar a {
+.sidebar > a {
     text-align: center;
     padding: 1em;
     text-decoration: none;
