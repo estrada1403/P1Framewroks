@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    position: sticky;
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: "glodok";
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+
+
+body {
+    font-family: "degular";
+    font-size: 1em;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
+    }
+     
+.menues {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    font-family: "degular";
+    font-weight: 500;
+    font-size: 25px;
+    background-color: black;          
+    }
+
+.menues a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+}
+
+.menues a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.videobg > video {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.footer {
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(69, 69, 252);
+    font-size: 30px;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
