@@ -6,16 +6,6 @@
    
 }
 
-/* header {
-    position: absolute;
-    position: fixed;
-} */
-
-/* .menues {
-    position: absolute;
-    position: fixed;
-} */
-
 h1 {
     background-color: black;
     color: whitesmoke;
@@ -38,7 +28,7 @@ body {
     background-color: black;
     color: rgb(69, 69, 252);
     }
-
+     
 .menues {
     width: 100%;
     position: absolute;
@@ -65,22 +55,6 @@ body {
     background-color: black;
 }
 
-
-@media (min-aspect-ratio: 16/9){
-    .video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .video {
-        width: auto;
-        height: 100%;
-    }
-}
-
-
 .videobg > video {
     width: 100%;
     height: 100%;
@@ -94,4 +68,18 @@ body {
     padding-bottom: 20px;
     color: rgb(69, 69, 252);
     font-size: 30px;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
+    }
 }
