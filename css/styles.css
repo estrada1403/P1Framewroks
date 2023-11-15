@@ -32,7 +32,7 @@ h1 {
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "degular";
     font-size: 1em;
     align-items: center;
     background-color: black;
@@ -44,9 +44,9 @@ body {
     position: absolute;
     z-index: 1;
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "degular";
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     background-color: black;          
     }
 
