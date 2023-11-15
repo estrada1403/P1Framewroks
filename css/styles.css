@@ -8,12 +8,17 @@
 
 h1 {
     background-color: black;
-    font-size: 2em;
     color: whitesmoke;
     text-align: center;
     position: sticky;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
+    font-size: 2em;
+    font-family: "glodok";
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
 }
 
 
@@ -22,17 +27,25 @@ body {
     font-size: 1em;
     align-items: center;
     background-color: black;
-    color: rgb(69, 69, 244);
+    color: rgb(69, 69, 252);
     }
 
 .menues {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;          
+        
+               
     }
 
-.navbar {
-    
+.menues a {
+        color: black;
+        text-decoration: none;
 }
+
+.menues a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
 
 
 @media (min-aspect-ratio: 16/9){
