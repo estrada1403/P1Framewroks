@@ -2,36 +2,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+   
 }
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    position: sticky;
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: "glodok";
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+
 body {
-    font-family:  degular, sans-serif;;
-    background-color:#0558FC;
+    font-family: degular, sans-serif;
     font-size: 1em;
     align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
+    }
+     
+.menues {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    font-family: degular, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: black;          
+    }
+
+.menues a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
 }
 
-.sidebar {
+.menues a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
-#content > .titles > h1{
-    font-family: glodok, sans-serif;
-    font-weight: 400;
-    font-style: normal;;
-    color: white;
-    font-size: 10em; 
+.dropdown-menu {
+    background-color: black;
 }
+
+.videobg > video {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
 .marquee {
     width: 100%;
-    padding: 0.6em 0;
+    padding: 1em 0;
     overflow: hidden;
     white-space: nowrap;
     
-    background-color: white;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 1.4em;
-    letter-spacing: 1px;
+    font-family: degular, sans-serif;
     color: black;
+    background-color: yellow;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
 }
 
 .marquee > span {
@@ -44,36 +85,45 @@ body {
     animation-play-state: paused;
 }
 
-@keyframes marquee {
-    0% {
-        transform: translate(0, 0);
-    }
-    
-    100% {
-        transform: translate(-100%, 0);
-    }
-}
-
-.breadcrumb {
-
-}
-
-/*container*/
-
-#container{
-display: flex;
-background-color: aquamarine;
-justify-content: center;
-
-}
-
-.row{
-display: flex;
-}
-
-.col{
+#redes {
     display: flex;
-    
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em; 
+    color: white;
 }
 
-/*final container*/
+#redes > i {
+    background-color: transparent;
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+#redes > i:hover{
+    color: rgb(69, 69, 252);
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+.footer {
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(69, 69, 252);
+    font-size: 30px;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}

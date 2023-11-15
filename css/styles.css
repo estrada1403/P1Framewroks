@@ -20,9 +20,8 @@ h1 {
     font-stretch:normal;
 }
 
-
 body {
-    font-family: "degular";
+    font-family: degular, sans-serif;
     font-size: 1em;
     align-items: center;
     background-color: black;
@@ -34,7 +33,7 @@ body {
     position: absolute;
     z-index: 1;
     position: fixed;
-    font-family: "degular";
+    font-family: degular, sans-serif;
     font-weight: 500;
     font-size: 25px;
     background-color: black;          
@@ -59,6 +58,51 @@ body {
     width: 100%;
     height: 100%;
     align-content: center;
+}
+
+.marquee {
+    width: 100%;
+    padding: 1em 0;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    font-family: degular, sans-serif;
+    color: black;
+    background-color: yellow;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.marquee > span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee > span:hover {
+    animation-play-state: paused;
+}
+
+#redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em; 
+    color: white;
+}
+
+#redes > i {
+    background-color: transparent;
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+#redes > i:hover{
+    color: rgb(69, 69, 252);
+    padding: 0 1em;
+    font-size: 2em;
 }
 
 .footer {
