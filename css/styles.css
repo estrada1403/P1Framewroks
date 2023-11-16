@@ -105,10 +105,12 @@ body {
 
 .tabla {
     padding-top: 30px;
+    border-collapse: collapse;
 }
 
 .boton {
     padding-top: 30px;
+    margin-top: 20px;
 }
 
 .footer {
@@ -134,11 +136,11 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas (ejemplo: tablets y dispositivos móviles) */
-    .titulo {
+/* @media only screen and (max-width: 768px) {
+    /*movil */
+    /* .titulo {
      font-size: 30%;
-    }
+    } */
 
     /* .tabla th, .tabla td {
       display: block;
@@ -146,7 +148,78 @@ body {
       box-sizing: border-box;
     } */
 
-    .boton {
+    /* .boton {
       text-align: center;
+      
     }
+  } */
+
+
+
+  
+
+
+
+
+  /*media query para pantallas menores de 1000px*/
+@media screen and (max-width: 1300px) {
+    .titulo {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+   body {
+    margin: 0;
+   }
+    .carousel slide {
+        position: relative;
+}
+    .carousel-item img {
+    width: 100%;
+    height: auto;
   }
+
+}
+
+
+/* Segunda media query para pantallas menores de 600px. Se ponen dos imágenes por fila y se presenta el figcaption sobre la foto pero sin hover porque ya puede ser una pantalla táctil
+
+@media screen and (max-width: 600px) {
+
+    .galeria > figure {
+        flex: 50%;
+    }
+
+    .galeria > figure > figcaption {
+        opacity: 1;
+        top: auto;
+        bottom: 0;
+        height: 3em;
+        text-align: left;
+        justify-content: flex-start;
+        font-size: 0.8em;
+    }
+} */
+
+/* Tercera media query para pantallas menores de 450px. Se pone una imagen por fila */
+
+/* @media screen and (max-width: 450px) {
+
+    .galeria > figure {
+        flex: 100%;
+    }
+
+    header {
+        height: 3em;
+    }
+
+    header > h1 {
+        font-size: 1.5em;
+    }
+
+    section > h2 {
+        font-size: 1em;
+    }
+} */
