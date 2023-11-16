@@ -9,8 +9,8 @@
 h1 {
     background-color: black;
     color: whitesmoke;
-    padding-top: 20px;
-    font-size: 3em;
+    padding-top: 10px;
+    font-size: 2.5em;
     font-family: "degular";
     font-display:auto;
     font-style:normal;
@@ -95,7 +95,7 @@ body {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   color: darkblue; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /*sombra más pronunciada*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   border-radius: 50%;
 }
 
@@ -107,13 +107,15 @@ body {
 }
 
 .tabla {
-    padding-top: 30px;
+    padding-top: 10px;
     border-collapse: collapse;
 }
 
 .boton {
-    padding-top: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
 .footer {
@@ -138,25 +140,6 @@ body {
         height: 100%;
     }
 }
-
-/* @media only screen and (max-width: 768px) {
-    /*movil */
-    /* .titulo {
-     font-size: 30%;
-    } */
-
-    /* .tabla th, .tabla td {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-    } */
-
-    /* .boton {
-      text-align: center;
-      
-    }
-  } */
-
 
 @media screen and (max-width: 1500px) {
     .titulo {
@@ -185,57 +168,3 @@ body {
 
 
 
-
-
-/* text-align: left;
-justify-content: flex-start;
-font-size: 40%;
-flex: 100%;
-flex-direction: row; */
-
-
-
-
-
-
-
-
-/* Segunda media query para pantallas menores de 600px. Se ponen dos imágenes por fila y se presenta el figcaption sobre la foto pero sin hover porque ya puede ser una pantalla táctil
-
-@media screen and (max-width: 600px) {
-
-    .galeria > figure {
-        flex: 50%;
-    }
-
-    .galeria > figure > figcaption {
-        opacity: 1;
-        top: auto;
-        bottom: 0;
-        height: 3em;
-        text-align: left;
-        justify-content: flex-start;
-        font-size: 0.8em;
-    }
-} */
-
-/* Tercera media query para pantallas menores de 450px. Se pone una imagen por fila */
-
-/* @media screen and (max-width: 450px) {
-
-    .galeria > figure {
-        flex: 100%;
-    }
-
-    header {
-        height: 3em;
-    }
-
-    header > h1 {
-        font-size: 1.5em;
-    }
-
-    section > h2 {
-        font-size: 1em;
-    }
-} */
