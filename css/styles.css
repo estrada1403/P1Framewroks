@@ -20,14 +20,6 @@ h1 {
     font-stretch:normal;
 }
 
-body {
-    font-family: degular, sans-serif;
-    font-size: 1em;
-    align-items: center;
-    background-color: black;
-    color: rgb(69, 69, 252);
-    }
-     
 .menues {
     width: 100%;
     position: absolute;
@@ -37,11 +29,11 @@ body {
     font-weight: 500;
     font-size: 25px;
     background-color: black;          
-    }
+}
 
 .menues a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .menues a:hover {
@@ -53,45 +45,67 @@ body {
 .dropdown-menu {
     background-color: black;
 }
-
-.videobg > video {
-    width: 100%;
-    height: 100%;
-    align-content: center;
-}
-
-.marquee {
-    width: 100%;
-    padding: 1em 0;
-    overflow: hidden;
-    white-space: nowrap;
-    
+body {
     font-family: degular, sans-serif;
-    color: black;
-    background-color: yellow;
-    font-weight: 200;
-    font-style: normal;
     font-size: 1em;
-    letter-spacing: 1px;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
 }
+    
+    .videobg > video {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+    
+    .marquee {
+        width: 100%;
+        padding: 1em 0;
+        overflow: hidden;
+        white-space: nowrap;
+        
+        font-family: degular, sans-serif;
+        color: black;
+        background-color: yellow;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    
+    .marquee > span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+    
+    .marquee > span:hover {
+        animation-play-state: paused;
+    }
+    
+    h2 {
+        color: white;
+        margin: 0.2em;
+    }     
+    .carousel-inner{
+        width: 100%;
+        height: 500px;
 
-.marquee > span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 30s linear infinite;
-}
+    }
 
-.marquee > span:hover {
-    animation-play-state: paused;
-}
+    .carousel-item > img{
+        align-items: center;
+    }
 
-#redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1em; 
-    color: white;
-}
+    #redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em; 
+        color: white;
+        margin-top: 10px;
+    }
 
 #redes > i {
     background-color: transparent;
@@ -103,6 +117,113 @@ body {
     color: rgb(69, 69, 252);
     padding: 0 1em;
     font-size: 2em;
+}
+
+#newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cajablank {
+    width: 100%;
+    margin-left: 0; 
+}
+
+.cajanews {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+#newsletter > .cajanews > h3 {
+    font-size: 2em;
+    width:100%;
+    padding-bottom: 0.5em;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    font-family: "glodok";
+    color: black;
+    padding: 0;
+    margin: 0;
+
+}
+
+#newsletter > .cajanews > input { 
+   font-size: 1.2em;
+   height: 2em; 
+   width: 14em;
+   margin-top: 15px;
+}
+
+#newsletter > .cajanews > p {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0 1em;
+    margin-top: 15px;
+    width: 8em;
+    text-align: center;
+}
+
+#newsletter > .cajanews > p:hover{
+    outline-style: solid;
+}
+
+.target {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#popup {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: white;
+}
+
+#popup > h2 {
+    color: white;
+}
+
+#popup > p {
+    color: black;
+    width: 700px;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-left: 0;
+}
+
+#popup:target {
+    opacity: 90%;
+    visibility: visible; 
+    width: 80vh;
+}   
+
+#popup > p > a {
+    outline-style: solid;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 1em;
 }
 
 .footer {
