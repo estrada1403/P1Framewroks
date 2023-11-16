@@ -9,17 +9,31 @@
 h1 {
     background-color: black;
     color: whitesmoke;
-    text-align: center;
-    position: sticky;
-    padding-top: 20px;
-    font-size: 2em;
-    font-family: "glodok";
+    padding-top: 10px;
+    font-size: 2.5em;
+    font-family: "degular";
     font-display:auto;
     font-style:normal;
     font-weight:400;
     font-stretch:normal;
 }
 
+h2 {
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+body {
+    font-family: "degular";
+    font-size: 1.5em;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
+    }
+
+    .navbar-toggler {
+        color: antiquewhite;
+    }
 .menues {
     width: 100%;
     position: absolute;
@@ -281,10 +295,58 @@ flex-direction: row;
     color: black;
 }
 
+.container {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 25px;
+    display: flex;
+    
+}
+
+.titulo {
+    padding-left: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: blue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: blue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: darkblue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color:darkblue; 
+  border-radius: 50%;
+}
+
+.tabla {
+    padding-top: 10px;
+    align-content: center;
+}
+
+.boton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .footer {
     align-items: center;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 80px;
     padding-bottom: 20px;
     color: rgb(69, 69, 252);
     font-size: 30px;
@@ -303,3 +365,13 @@ flex-direction: row;
         height: 100%;
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .titulo {
+        font-size: 60%;
+    }
+}
+
+
+
+
