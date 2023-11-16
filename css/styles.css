@@ -52,13 +52,21 @@ body {
     background-color: black;
     color: rgb(69, 69, 252);
 }
-    
+
+.grid{
+    width: 100%;
+}
+
+.grid > .row {
+    width: 50%;
+}
+
     .videobg > video {
         width: 100%;
         height: 100%;
         align-content: center;
     }
-    
+     
     .marquee {
         width: 100%;
         padding: 1em 0;
@@ -83,22 +91,14 @@ body {
     .marquee > span:hover {
         animation-play-state: paused;
     }
-    
+  
     h2 {
         color: white;
-        margin: 0.2em;
-    }     
-    .carousel-inner{
-        width: 100%;
-        height: 500px;
+        margin-left: 0.5em;
+        font-family: "glodok";
+    }    
 
-    }
-
-    .carousel-item > img{
-        align-items: center;
-    }
-
-    #redes {
+#redes {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -119,10 +119,13 @@ body {
     font-size: 2em;
 }
 
+
+
 #newsletter{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .cajablank {
@@ -224,6 +227,38 @@ body {
     text-align: center;
     padding: 0.5em;
     margin: 0 1em;
+}
+
+#location{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.cajamapa{
+    width: 100%;
+}
+
+.cajamapa > iframe {
+    width: 100%;
+}
+
+.cajadirec > h3{
+    font-family: "glodok";
+    font-size: 2em;
+}
+
+.cajadirec{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: black;
 }
 
 .footer {
