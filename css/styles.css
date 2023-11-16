@@ -66,64 +66,22 @@ body {
     background-color: black;
     color: rgb(69, 69, 252);
 }
-
-.grid{
+.nike {
     width: 100%;
-}
-
-.grid > .row {
-    width: 50%;
-}
-
-.containers-fluid {
-width: 100%;
-height: 40em;
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-flex-direction: row;
-}
-
-.col-6{
-    width: 20%;
     display: flex;
-    flex-wrap: wrap;    
-    padding: 1em;
+    align-content: space-evenly;
+    padding-top: 3em;
 }
 
-.col-6 > img {
- width: 100%;
+.nike > h2 {
+    font-weight: 500;
+    font-size: 6em;
 }
 
     .videobg > video {
         width: 100%;
         height: 100%;
         align-content: center;
-    }
-     
-    .marquee {
-        width: 100%;
-        padding: 1em 0;
-        overflow: hidden;
-        white-space: nowrap;
-        
-        font-family: degular, sans-serif;
-        color: black;
-        background-color: yellow;
-        font-weight: 200;
-        font-style: normal;
-        font-size: 1em;
-        letter-spacing: 1px;
-    }
-    
-    .marquee > span {
-        display: inline-block;
-        padding-left: 100%;
-        animation: marquee 30s linear infinite;
-    }
-    
-    .marquee > span:hover {
-        animation-play-state: paused;
     }
   
     h2 {
@@ -346,6 +304,7 @@ flex-direction: row;
 .footer {
     align-items: center;
     text-align: center;
+    display: flex; 
     padding-top: 80px;
     padding-bottom: 20px;
     color: rgb(69, 69, 252);
