@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    padding-top: 10px;
+    font-size: 2.5em;
+    font-family: "degular";
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+body {
+    font-family: "degular";
+    font-size: 1.5em;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
+    }
+
+    .navbar-toggler {
+        color: antiquewhite;
+    }
+.menues {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    font-family: degular, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: black;          
+}
+
+.menues a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menues a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+body {
+    font-family: degular, sans-serif;
+    font-size: 1em;
+    align-items: center;
+    background-color: black;
+    color: rgb(69, 69, 252);
+}
+
+.grid{
+    width: 100%;
+}
+
+.grid > .row {
+    width: 50%;
+}
+
+.containers-fluid {
+width: 100%;
+height: 40em;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+flex-direction: row;
+}
+
+.col-6{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;    
+    padding: 1em;
+}
+
+.col-6 > img {
+ width: 100%;
+}
+
+    .videobg > video {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+     
+    .marquee {
+        width: 100%;
+        padding: 1em 0;
+        overflow: hidden;
+        white-space: nowrap;
+        
+        font-family: degular, sans-serif;
+        color: black;
+        background-color: yellow;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    
+    .marquee > span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 30s linear infinite;
+    }
+    
+    .marquee > span:hover {
+        animation-play-state: paused;
+    }
+  
+    h2 {
+        color: white;
+        margin-left: 0.5em;
+        font-family: "glodok";
+    }    
+
+#redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em; 
+        color: white;
+        margin-top: 10px;
+    }
+
+#redes > i {
+    background-color: transparent;
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+#redes > i:hover{
+    color: rgb(69, 69, 252);
+    padding: 0 1em;
+    font-size: 2em;
+}
+
+
+
+#newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.cajablank {
+    width: 100%;
+    margin-left: 0; 
+}
+
+.cajanews {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+#newsletter > .cajanews > h3 {
+    font-size: 2em;
+    width:100%;
+    padding-bottom: 0.5em;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    font-family: "glodok";
+    color: black;
+    padding: 0;
+    margin: 0;
+
+}
+
+#newsletter > .cajanews > input { 
+   font-size: 1.2em;
+   height: 2em; 
+   width: 14em;
+   margin-top: 15px;
+}
+
+#newsletter > .cajanews > p {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0 1em;
+    margin-top: 15px;
+    width: 8em;
+    text-align: center;
+}
+
+#newsletter > .cajanews > p:hover{
+    outline-style: solid;
+}
+
+.target {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#popup {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: white;
+}
+
+#popup > h2 {
+    color: white;
+}
+
+#popup > p {
+    color: black;
+    width: 700px;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-left: 0;
+}
+
+#popup:target {
+    opacity: 90%;
+    visibility: visible; 
+    width: 80vh;
+}   
+
+#popup > p > a {
+    outline-style: solid;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 1em;
+}
+
+#location{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.cajamapa{
+    width: 100%;
+}
+
+.cajamapa > iframe {
+    width: 100%;
+}
+
+.cajadirec > h3{
+    font-family: "glodok";
+    font-size: 2em;
+}
+
+.cajadirec{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 25px;
+    display: flex;
+    
+}
+
+.titulo {
+    padding-left: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: blue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: blue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: darkblue; 
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color:darkblue; 
+  border-radius: 50%;
+}
+
+.tabla {
+    padding-top: 10px;
+    align-content: center;
+}
+
+.boton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: rgb(69, 69, 252);
+    font-size: 30px;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .titulo {
+        font-size: 60%;
+    }
+}
+
+
+
+
