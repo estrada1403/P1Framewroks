@@ -53,13 +53,6 @@ body {
     color: rgb(69, 69, 252);
 }
 
-.grid{
-    width: 100%;
-}
-
-.grid > .row {
-    width: 50%;
-}
 
     .videobg > video {
         width: 100%;
