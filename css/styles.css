@@ -30,7 +30,10 @@ body {
     background-color: black;
     color: rgb(69, 69, 252);
     }
-     
+
+    .navbar-toggler {
+        color: antiquewhite;
+    }
 .menues {
     width: 100%;
     position: absolute;
@@ -109,7 +112,7 @@ body {
 }
 
 .boton {
-    padding-top: 30px;
+    padding-top: 10px;
     margin-top: 20px;
 }
 
@@ -155,33 +158,46 @@ body {
   } */
 
 
-
-  
-
-
-
-
-  /*media query para pantallas menores de 1000px*/
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
     .titulo {
-        font-size: 50%;
+        font-size: 60%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+    .contenedorzap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo {
+        justify-content: center;
+        align-items: center;
+    } 
 
-   body {
-    margin: 0;
-   }
-    .carousel slide {
-        position: relative;
-}
-    .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
+    .boton {
+        justify-content: center;
+    }
+        
+    }
 
-}
+
+
+
+
+/* text-align: left;
+justify-content: flex-start;
+font-size: 40%;
+flex: 100%;
+flex-direction: row; */
+
+
+
+
+
+
 
 
 /* Segunda media query para pantallas menores de 600px. Se ponen dos imágenes por fila y se presenta el figcaption sobre la foto pero sin hover porque ya puede ser una pantalla táctil
